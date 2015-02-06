@@ -88,6 +88,7 @@ def get_redis_error_classes():
             IOError,
             OSError,
             exceptions.ConnectionError,
+            exceptions.TimeoutError,
             exceptions.AuthenticationError)),
         (virtual.Transport.channel_errors + (
             DataError,
